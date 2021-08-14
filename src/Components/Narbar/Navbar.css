@@ -1,0 +1,35 @@
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: brown;
+    color: cornsilk;
+    border-radius: 5px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 5px; 
+    }
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+.enlacesMenu{
+    width: 241px;
+    display: contents;
+    }
+    a{
+        padding-top: 1%;
+        color: white;
+        text-decoration: none;
+    }
+input{
+    align-self: flex-end;
+    width: 23%;
+    height: 10%;
+}
