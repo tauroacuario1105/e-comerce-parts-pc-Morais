@@ -1,0 +1,35 @@
+div{
+    width: 100%;
+}
+.itemList{
+    padding-top: 5%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 221px;
+}
+.imgList{
+    width: 200px;
+    height: 200px;
+}
+h2{
+    width: 100%;
+}
+.container1{
+    display: block;
+}
+.imgItem{
+    width: 200px;
+    height: 200px;
+}
+.row{
+    width: 100% !important;
+    justify-content: space-around;
+}
+.Container{
+    width: 30% !important;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 10px;
+}

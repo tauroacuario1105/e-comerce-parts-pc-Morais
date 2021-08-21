@@ -1,12 +1,14 @@
 import { NavBar } from './Components/Narbar/Narbar';
-import {ItemListContainer} from './Components/itemListContainer/ItemListContainer'
+import {ItemListContainer} from './Components/itemList/ItemListContainer'
+import { Clock } from './Components/clock/clock';
 import '../src/index.css'
 
 function App() {
   return (
     <div>
       <NavBar/>
-      <ItemListContainer/>
+      <ItemListContainer greeting="ARMA TU PC"/>
+
     </div>
   );
 }
