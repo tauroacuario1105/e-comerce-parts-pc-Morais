@@ -11,7 +11,7 @@ export const ItemListContainer = () => {
 
 useEffect(()=>{
   setLoading(true)
-  pedirDatos(1999)
+  pedirDatos(1999 )
     .then(res => { 
       setData([...res])
     })
