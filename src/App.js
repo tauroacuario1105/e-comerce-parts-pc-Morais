@@ -4,11 +4,11 @@ import { Clock } from './Components/clock/clock';
 import '../src/index.css'
 
 function App() {
+  fetch()
   return (
     <div>
       <NavBar/>
-      <ItemListContainer greeting="ARMA TU PC"/>
-
+      <ItemListContainer/>
     </div>
   );
 }

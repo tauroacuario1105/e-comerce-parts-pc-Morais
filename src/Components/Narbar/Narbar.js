@@ -7,9 +7,8 @@ export const NavBar = () => {
       <div>
         <img id="menu" class="logo" src="https://w7.pngwing.com/pngs/568/379/png-transparent-technology-computer-icons-technology-electronics-text-logo.png"></img>
         <nav className="enlacesMenu">
-          <a href="#home">Home</a>
-          <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
+          <a href="#home">INICIO</a>
+          <a href="#features">PRODUCTOS</a>
         </nav>
         <input></input>
       </div>
