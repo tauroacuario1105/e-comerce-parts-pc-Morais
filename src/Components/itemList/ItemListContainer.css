@@ -1,5 +1,14 @@
-
+.navbar{
+    width: 100%;
+}
 .imgItem{
     width: 200px;
     height: 200px;
+}
+a{
+    color: brown !important;
+    text-decoration: none;
+}
+.btn-primary{
+    color: white;
 }
