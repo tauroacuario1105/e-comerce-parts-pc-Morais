@@ -1,17 +1,20 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState,} from "react";
 import { useParams } from "react-router-dom";
-import { stock } from "../../data/stock";
 import { pedirDatos } from "../../helpers/pedirdatos";
 import { ItemList } from "./item";
+import {  ProgressBar } from "react-bootstrap";
+import { CartContext } from "../../Context/CartContext";
 
 
 export const ItemListContainer = () => {
-  const {catId} = useParams();
-   console.log(catId)
 
+  const contexto = useContext(CartContext)
+
+  const {catId} = useParams();
 
   const [data,setData]= useState([])
   const [loading, setLoading ] = useState(false)
+
 
 useEffect(()=>{
   setLoading(true)
@@ -37,7 +40,8 @@ return (
   <div className="container1">
     {
       loading
-      ? <p>loading...</p>
+      ? <div><ProgressBar animated now={75} />
+        </div>
       : <ItemList productos={data}/>
       }       
   </div>

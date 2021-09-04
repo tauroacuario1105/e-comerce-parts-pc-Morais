@@ -2,3 +2,9 @@
     width: 50%;
     height: 65%;
 }
+.agregar{
+    display: flex;
+}
+.card{
+    width: 30rem !important;
+}

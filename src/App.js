@@ -1,15 +1,19 @@
 import { NavBar } from "./Components/Narbar/Narbar";
 import { ItemListContainer } from "./Components/itemList/ItemListContainer";
-import { Clock } from "./Components/clock/clock";
-import { Inicio } from "./Components/itemList/Inicio";
-import "../src/index.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { MiCarrito } from "./Components/itemList/MiCarrito";
+import { CartScreem } from "./Components/CartScreem/CartScreem";
 import { ItemDetailContainer } from "../src/Components/itemDetailContainer/ItemDetailContainer";
+import { CartProvaider, } from "./Context/CartContext";
+import { UIContextProvider } from "./Context/UIContext";
 
 function App() {
+
+
   return (
-    <BrowserRouter>
+    <>
+    
+      <CartProvaider>
+        <BrowserRouter>
       <NavBar />
       <Switch>
         <Route exact path="/">
@@ -21,12 +25,15 @@ function App() {
         <Route exact path="/detail/:itemId">
           <ItemDetailContainer />
         </Route>
-        <Route exact path="/mi-carrito">
-          <MiCarrito />
+        <Route exact path="/cart">
+          <CartScreem/>
         </Route>
       </Switch>
     </BrowserRouter>
-  );
+      </CartProvaider>
+   
+    </>
+);
 }
 
 export default App;

@@ -6,9 +6,6 @@ import {
   Col,
   Row,
   Button,
-  Modal,
-  Image,
-  Container,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -56,9 +53,6 @@ export const ItemList = ({ productos, id }) => {
                         {" "}
                         Detalle
                       </Link>
-                    </Button>{" "}
-                    <Button className="w-100 m-1" variant="primary">
-                      Añadir al Carrito
                     </Button>{" "}
                   </Card.Footer>
                 </Card>

@@ -1,5 +1,6 @@
 import {React, NavDropdown,Navbar,Container, Nav} from "react-bootstrap";
 import { Link, } from "react-router-dom";
+import { CardWidget } from "../Cardwidget/cardwidget";
 
 
 export const NavBar = () => {
@@ -16,10 +17,11 @@ export const NavBar = () => {
           <NavDropdown.Divider />
           <NavDropdown.Item><Link to ="/category/videoTarjet/"> TARJETAS DE VIDEO</Link></NavDropdown.Item>
         </NavDropdown>
-        <Nav.Link><Link to ="/mi-carrito">MI CARRITO</Link></Nav.Link>
       </Nav>
+      <CardWidget/>
     </Navbar.Collapse>
   </Container>
 </Navbar>
+
 );
 };
