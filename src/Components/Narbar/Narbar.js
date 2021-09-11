@@ -12,7 +12,7 @@ export const NavBar = () => {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link ><Link to ="/">INICIO</Link></Nav.Link>
-        <NavDropdown title="PRODUCTOS" id="basic-nav-dropdown">
+        <NavDropdown className="list"title="PRODUCTOS" id="basic-nav-dropdown">
           <NavDropdown.Item><Link to ="/category/motherBoard/"> MOTHERBOARDS</Link></NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item><Link to ="/category/videoTarjet/"> TARJETAS DE VIDEO</Link></NavDropdown.Item>

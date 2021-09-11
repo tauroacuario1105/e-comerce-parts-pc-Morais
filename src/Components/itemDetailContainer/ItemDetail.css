@@ -5,6 +5,17 @@
 .agregar{
     display: flex;
 }
-.card{
+.cardDetail{
+    margin-left: 29%;
+}
+.d-flex{
     width: 30rem !important;
+    }
+.imgDetail{
+    margin-left: 25%;
+}
+.card-footer{
+    width: 100%;
+}.nav-link a{
+    color: brown;
 }

@@ -6,7 +6,11 @@
     height: 200px;
 }
 a{
-    color: brown !important;
+    color: brown;
+    text-decoration: none;
+}
+.card-footer a{
+    color: white !important;
     text-decoration: none;
 }
 .btn-primary{

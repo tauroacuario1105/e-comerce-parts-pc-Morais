@@ -1,16 +1,9 @@
 import React, { useState } from "react";
-//import { ModalItemDetail } from '../Modals/ItemDetail';
-import {
-  Card,
-  CardGroup,
-  Col,
-  Row,
-  Button,
-} from "react-bootstrap";
+import {Card,CardGroup,Col,Row,} from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 
-export const ItemList = ({ productos, id }) => {
+export const ItemList = ({ productos,id}) => {
   const [show, setShow] = useState(false);
   const [item, setItem] = useState([]);
 
@@ -44,16 +37,10 @@ export const ItemList = ({ productos, id }) => {
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Button
-                      className="w-100 m-1"
-                      onClick={() => handleShow(producto)}
-                      variant="primary"
-                    >
-                      <Link to={`/detail/${producto.id}`}>
+                      <Link class="btn btn-primary btn-lg w-100" to={`/detail/${producto.id}`}>
                         {" "}
                         Detalle
                       </Link>
-                    </Button>{" "}
                   </Card.Footer>
                 </Card>
               </Col>
