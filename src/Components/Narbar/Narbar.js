@@ -7,7 +7,7 @@ export const NavBar = () => {
   return (
   <Navbar bg="dark" expand="lg">
   <Container>
-    <Navbar.Brand href="#home"><img id="menu" class="logo" src="https://w7.pngwing.com/pngs/568/379/png-transparent-technology-computer-icons-technology-electronics-text-logo.png"></img></Navbar.Brand>
+    <Navbar.Brand href="#home"><img id="menu" alt="" class="logo" src="https://w7.pngwing.com/pngs/568/379/png-transparent-technology-computer-icons-technology-electronics-text-logo.png"></img></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">

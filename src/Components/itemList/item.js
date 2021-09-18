@@ -1,19 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import {Card,CardGroup,Col,Row,} from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 
 export const ItemList = ({ productos,id}) => {
-  const [show, setShow] = useState(false);
-  const [item, setItem] = useState([]);
 
-  function handleShow(producto) {
-    setItem(producto);
-    setShow(true);
-  }
-  function handleClose() {
-    setShow(false);
-  }
+
 
   return (
     <section className="container my-5">

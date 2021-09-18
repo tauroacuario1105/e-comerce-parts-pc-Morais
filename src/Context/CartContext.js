@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-import context from "react-bootstrap/esm/AccordionContext";
 
 //creacion del contexto
 export const CartContext = createContext()
@@ -25,11 +24,14 @@ export const CartProvaider =({children})=>{
     }
 
     const isInCart = (id) => {
-      return carrito.some(el => el.id == id)
+      return carrito.some(el => el.id === id)
     }
 
+    const totalCarrito = () => {
+      return carrito.reduce((acc, producto) => acc + producto.precio * producto.cantidad,0)
+    }
     return(
-        <CartContext.Provider value={{carrito,isInCart,agregarAlCarrito, eliminarDelCarrito, cantidadCarrito, vaciarCarrito }}>
+        <CartContext.Provider value={{carrito, totalCarrito,isInCart,agregarAlCarrito, eliminarDelCarrito, cantidadCarrito, vaciarCarrito }}>
             {children}
         </CartContext.Provider>
     )

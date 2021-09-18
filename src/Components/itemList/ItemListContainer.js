@@ -1,15 +1,11 @@
-import React, {useContext, useEffect, useState,} from "react";
+import React, { useEffect, useState,} from "react";
 import { useParams } from "react-router-dom";
 import { ItemList } from "./item";
 import {  ProgressBar } from "react-bootstrap";
-import { CartContext } from "../../Context/CartContext";
 import { getFirestore } from "../../firebase/Config";
 
 
 export const ItemListContainer = () => {
-  
-  const contexto = useContext(CartContext)
-
   const {catId} = useParams();
 
   const [data,setData]= useState([])

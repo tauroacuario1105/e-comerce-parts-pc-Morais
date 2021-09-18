@@ -2,7 +2,6 @@ import React, { useContext, useState,} from "react";
 import { Card } from "react-bootstrap";
 import { CartContext } from "../../Context/CartContext";
 import { Counter } from "../Counter/Counter";
-import {useParams} from "react-router-dom";
 
 
 export const ItemDetail = ({ id, category, img, nombre, descripcion, precio, stock, }) => {
