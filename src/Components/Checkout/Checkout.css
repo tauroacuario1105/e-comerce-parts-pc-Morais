@@ -1,0 +1,15 @@
+.checkout{
+    display: table-caption;
+    }
+.CardDetail{
+        margin-left: 75%;
+        padding-top: 10%;
+        
+    }
+.box{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: white;
+}

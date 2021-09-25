@@ -1,9 +1,17 @@
+body{
+    background-image: url(https://i.pinimg.com/564x/cc/23/93/cc23938ec1b7c316de18df25bb0c5b08.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: -1000px;
+}
 .navbar{
     width: 100%;
 }
 .imgItem{
     width: 200px;
     height: 200px;
+    
 }
 a{
     color: brown;
@@ -15,4 +23,29 @@ a{
 }
 .btn-primary{
     color: white;
+}
+.card{
+    background-color: transparent;
+}
+h2{
+    color: white;
+}
+.card-title.h5{
+    color: white;
+}
+hr{
+    color: white;
+}
+p{
+    color: white;
+}
+.card-img-top{
+    -moz-box-shadow: 0px 0px 30px #c429aa; 
+    -webkit-box-shadow: 0px 0px 30px #c429aa; 
+    box-shadow: 0px 0px 30px #c429aa;
+    
+    padding: 10px;
+    border: 1px solid #c429aa;
+
+    margin: 20px;
 }

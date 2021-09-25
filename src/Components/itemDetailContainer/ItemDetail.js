@@ -29,7 +29,7 @@ export const ItemDetail = ({ id, category, img, nombre, descripcion, precio, sto
           {descripcion}
           </Card.Text>
           <Card.Text>
-          {precio}
+          Precio: S/. {precio}.00
           </Card.Text>
           <Counter max = {stock} 
           cantidad={cantidad} 

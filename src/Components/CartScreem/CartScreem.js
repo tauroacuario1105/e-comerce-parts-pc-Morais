@@ -11,13 +11,14 @@ export const CartScreem = () =>{
 
     return(
         <div className="container my-5">
-            <h1>resumen de compra</h1>
+            <h1>Resumen de compra</h1>
             {carrito.map(producto => (
                 <div key={producto.id}>
                     <h3>{producto.nombre}</h3>
                     <p>cantidad: {producto.cantidad}</p>
-                    <p>Precio: {producto.precio * producto.cantidad}</p>
+                    <p>Precio: S/.{producto.precio * producto.cantidad}</p>
                     <button><FaTrash onClick={() => eliminarDelCarrito (producto.id)}/></button>
+                    <hr/>
                 </div>
             ))}
             <hr/>

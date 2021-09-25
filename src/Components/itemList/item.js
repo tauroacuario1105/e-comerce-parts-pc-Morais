@@ -25,7 +25,7 @@ export const ItemList = ({ productos,id}) => {
                   <Card.Body>
                     <Card.Title>{producto.nombre}</Card.Title>
                     <Card.Text className="white-space:nowrap">
-                      {producto.descripcion.substring(0, 170) + "..."}
+                      {producto.descripcion.substring(0, 120) + "..."}
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>

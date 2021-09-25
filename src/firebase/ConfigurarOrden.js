@@ -6,7 +6,7 @@ export const generarOrden = (buyer, carrito, total) => {
   return new Promise(async (resolve, reject) => {
     const db = getFirestore();
 
-    //creo bach para actualizaccion del stock
+    //creo bach para actualizaccion del stock en firebase
     const itemToUpdate = db.collection("productos").where(
       firebase.firestore.FieldPath.documentId(),
       "in",

@@ -12,6 +12,7 @@ export const Checkout = () => {
     email: "gianfranco@gmail.com",
     tel: 94847532,
   });
+  
 
   const handleInputChange = (e) => {
     setvalues({
@@ -43,16 +44,20 @@ export const Checkout = () => {
       });
   };
 
+
   return (
-    <div>
-      <h2>Checkout</h2>
+    <div className="checkout">
+      <div className="CardDetail" style={{ width: "35rem", height: "35rem"}}>
+      <h2>Orden de Compra</h2>
       <hr />
 
       {!carrito.length ? (
         <Redirect to="/" />
       ) : (
         <div>
-          <form onSubmit={handleSubmit}>
+          
+          <form className="box" onSubmit={handleSubmit}>
+          <label for="fname">Nombre:</label>
             <input
               type="text"
               value={values.nombre}
@@ -60,6 +65,7 @@ export const Checkout = () => {
               name="nombre"
               required
             />
+            <label for="fname">Celular:</label>
             <input
               type="tel"
               value={values.tel}
@@ -67,6 +73,7 @@ export const Checkout = () => {
               name="tel"
               required
             />
+            <label for="fname">Email:</label>
             <input
               type="email"
               value={values.email}
@@ -74,10 +81,13 @@ export const Checkout = () => {
               name="email"
               required
             />
+            <hr/>
             <button type="submit">Submit</button>
           </form>
+          
         </div>
       )}
+    </div>
     </div>
   );
 };
