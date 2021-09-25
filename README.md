@@ -26,7 +26,7 @@ Arma tu pc es un proyecto generado en base a React con la finalidad de generar u
 -BEM (metodología ágil).\
 -Firebase (base de datos).\
 -React-Boostarp (biblioteca de estilos).\
--React-icons(biblioteca de iconos).\
+-React-icons(biblioteca de iconos).
 
 ### Demostracion de Funcionalidad de Pagina
 ![](./src/gif/funcionalidad-de-pagina.gif)
