@@ -16,7 +16,7 @@ You will also see any lint errors in the console.
 
 ### Proyecto Ecommerce "Arma Tu PC"
 
-## Drescripcion:
+## Descripcion:
 Arma tu pc es un proyecto generado en base a React con la finalidad de generar una pagina web ecommer con la funcionalidad de generar una orden de compra, el cual la pagina trata de venta de partes de computadora como las Motherboards y Tarjetas de video manipulando una base de datos actualizable en stocks.
 
 ### Herramientas Integradas al Proyecto
@@ -25,7 +25,7 @@ Arma tu pc es un proyecto generado en base a React con la finalidad de generar u
 -Css (etiquetas de estilo).\
 -BEM (metodología ágil).\
 -Firebase (base de datos).\
--React-Boostarp (biblioteca de estilos).\
+-React-Boostrap (biblioteca de estilos).\
 -React-icons(biblioteca de iconos).
 
 ### Demostracion de Funcionalidad de Pagina
